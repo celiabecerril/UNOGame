@@ -3,19 +3,27 @@ package UNOGame;
 class Carta {
 
     private String color;
-    private String valor;
+    private int valor;
+    private String tipo;
 
-    public Carta(String color, String valor) {
+    public Carta(String color, int valor, String tipo) {
         this.color = color;
         this.valor = valor;
+        this.tipo = tipo;
     }
+
+    
 
     public String obtenerColor() {
         return color;
     }
 
-    public String obtenerValor() {
+    public int obtenerValor() {
         return valor;
     }
-    
+
+    public String obtenerTipo() {
+        return tipo;
+    }
+
 }
